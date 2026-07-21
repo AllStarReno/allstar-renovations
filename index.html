@@ -1,1 +1,770 @@
-Updated homepage with correct 3-tier pricing and improved integration
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All-Star Renovations | Bathroom Remodeling Conway AR | Kitchen & Handyman Services</title>
+    <meta name="description" content="Expert bathroom remodeling, walk-in showers, tub-to-shower conversions, and Aging Safely Walk-In Tubs in Conway, AR and Central Arkansas. 2-day installs, lifetime warranties, 5-star rated. Free in-home consultation.">
+    <meta name="keywords" content="bathroom remodeling Conway AR, bathroom remodeler Conway, walk-in shower installation Conway, tub to shower conversion Conway, walk-in tub Conway AR, kitchen remodeling Conway, handyman services Conway">
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/jpeg" href="assets/all-star-renovations-icon.jpg">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
+        
+        :root {
+            --primary: #0f172a;
+            --accent: #c2410f;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.75)), url('https://picsum.photos/id/1015/2000/1200');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .section-header {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+
+        .nav-scrolled {
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            background-color: rgba(255,255,255,0.95);
+            backdrop-filter: blur(12px);
+        }
+
+        .service-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        .stone-texture {
+            background-image: url('https://picsum.photos/id/1016/800/600');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .stat-number {
+            font-variant-numeric: tabular-nums;
+        }
+
+        .allstar-gold {
+            color: #c2410f;
+        }
+
+        .premium-shadow {
+            box-shadow: 0 10px 15px -3px rgb(15 23 42 / 0.1), 0 4px 6px -4px rgb(15 23 42 / 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+    <!-- Top Bar -->
+    <div class="bg-slate-900 text-white py-2 text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-x-6">
+                <div class="flex items-center gap-x-2">
+                    <i class="fas fa-phone text-emerald-400"></i>
+                    <a href="tel:5015043398" class="hover:text-emerald-300 font-medium">(501) 504-3398</a>
+                </div>
+                <div class="hidden md:block text-slate-400">|</div>
+                <div class="hidden md:flex items-center gap-x-2 text-sm">
+                    <i class="fas fa-map-marker-alt text-emerald-400"></i>
+                    <span>Conway, AR • Serving Central Arkansas</span>
+                </div>
+            </div>
+            <div>
+                <a href="#book-consultation" 
+                   class="inline-flex items-center px-4 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold rounded-full transition-colors">
+                    <i class="fas fa-calendar-check mr-2"></i> 
+                    BOOK FREE CONSULTATION
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="bg-white sticky top-0 z-50 transition-all">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <img src="assets/all-star-renovations-logo-transparent.png" alt="All-Star Renovations | Creating Perfection" class="h-10 w-auto">
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-x-9 text-sm font-medium">
+                    <a href="#services" class="hover:text-slate-600 transition-colors">Services</a>
+                    <a href="#shower-system" class="hover:text-slate-600 transition-colors">All-Star Shower System</a>
+                    <a href="#why-us" class="hover:text-slate-600 transition-colors">Why Us</a>
+                    <a href="#locations" class="hover:text-slate-600 transition-colors">Areas We Serve</a>
+                    <a href="#configurator" class="hover:text-slate-600 transition-colors font-semibold text-emerald-700">Design Tool</a>
+                </div>
+
+                <div class="flex items-center gap-x-3">
+                    <a href="tel:5015043398" 
+                       class="hidden sm:flex items-center px-5 py-2.5 text-sm font-semibold border border-slate-300 rounded-2xl hover:bg-slate-100 transition-colors">
+                        <i class="fas fa-phone mr-2"></i> Call Now
+                    </a>
+                    <a href="#book-consultation" 
+                       class="px-6 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold rounded-2xl flex items-center gap-x-2 transition-all active:scale-[0.985]">
+                        <span>Free Consultation</span>
+                    </a>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden w-10 h-10 flex items-center justify-center text-slate-600" id="mobile-menu-btn">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-bg h-[100dvh] min-h-[620px] flex items-center relative">
+        <div class="max-w-5xl mx-auto px-6 text-white relative z-10">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-x-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-3xl mb-6 border border-white/20 text-sm">
+                    <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                    <span class="font-medium">Serving Conway &amp; Central Arkansas since 2014</span>
+                </div>
+                
+                <h1 class="text-6xl md:text-7xl font-bold tracking-tighter leading-[1.05] mb-6">
+                    Beautiful Bathrooms.<br>
+                    Built to Last.<br>
+                    <span class="text-emerald-300">Installed in 2 Days.</span>
+                </h1>
+                
+                <p class="max-w-lg text-xl text-white/90 mb-9">
+                    Premium All-Star Shower Systems with lifetime warranties. 
+                    Grout-free. Slip-resistant. Designed for safety, comfort, and effortless maintenance.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#book-consultation" 
+                       class="group inline-flex items-center justify-center gap-x-3 px-9 py-4 bg-white text-slate-900 hover:bg-amber-50 font-semibold text-lg rounded-3xl transition-all active:scale-[0.985]">
+                        <span>Book Your Free In-Home Consultation</span>
+                        <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    
+                    <a href="#configurator" 
+                       class="inline-flex items-center justify-center gap-x-3 px-8 py-4 border border-white/70 hover:bg-white/10 font-medium rounded-3xl text-lg transition-colors">
+                        <i class="fas fa-magic mr-2"></i>
+                        <span>Try Our Designer Shower Tool</span>
+                    </a>
+                </div>
+                
+                <div class="mt-8 flex items-center gap-x-8 text-sm">
+                    <div class="flex items-center -space-x-2">
+                        <div class="w-8 h-8 bg-white rounded-full border-2 border-white overflow-hidden"><img src="https://picsum.photos/id/1005/32/32" class="object-cover"></div>
+                        <div class="w-8 h-8 bg-white rounded-full border-2 border-white overflow-hidden"><img src="https://picsum.photos/id/1011/32/32" class="object-cover"></div>
+                        <div class="w-8 h-8 bg-white rounded-full border-2 border-white overflow-hidden"><img src="https://picsum.photos/id/1009/32/32" class="object-cover"></div>
+                    </div>
+                    <div class="text-white/80 text-sm">Join 250+ happy Central Arkansas homeowners</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Trust bar at bottom of hero -->
+        <div class="absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur border-t py-3.5">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="flex flex-wrap justify-center md:justify-between items-center gap-x-8 gap-y-3 text-sm text-slate-600">
+                    <div class="flex items-center gap-x-2">
+                        <i class="fas fa-check-circle text-emerald-500"></i> 
+                        <span class="font-medium">Lifetime Material Warranty</span>
+                    </div>
+                    <div class="flex items-center gap-x-2">
+                        <i class="fas fa-check-circle text-emerald-500"></i> 
+                        <span class="font-medium">5-Year Workmanship Guarantee</span>
+                    </div>
+                    <div class="flex items-center gap-x-2">
+                        <i class="fas fa-check-circle text-emerald-500"></i> 
+                        <span class="font-medium">2-Day Professional Install</span>
+                    </div>
+                    <div class="flex items-center gap-x-2">
+                        <i class="fas fa-check-circle text-emerald-500"></i> 
+                        <span class="font-medium">Licensed • Insured • Local</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- STATS / TRUST -->
+    <div class="max-w-7xl mx-auto px-6 -mt-8 relative z-20">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-px bg-white shadow-xl rounded-3xl overflow-hidden border">
+            <div class="px-8 py-7 text-center">
+                <div class="text-4xl font-bold text-slate-900">250+</div>
+                <div class="text-sm font-medium text-slate-500 mt-1">Projects Completed</div>
+            </div>
+            <div class="px-8 py-7 text-center border-l">
+                <div class="text-4xl font-bold text-slate-900">10+</div>
+                <div class="text-sm font-medium text-slate-500 mt-1">Years Serving Conway</div>
+            </div>
+            <div class="px-8 py-7 text-center border-l">
+                <div class="text-4xl font-bold text-emerald-600">5.0</div>
+                <div class="text-sm font-medium text-slate-500 mt-1">Average Google Rating</div>
+            </div>
+            <div class="px-8 py-7 text-center border-l">
+                <div class="text-4xl font-bold text-slate-900">2</div>
+                <div class="text-sm font-medium text-slate-500 mt-1">Days Average Install</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES OVERVIEW -->
+    <section id="services" class="max-w-7xl mx-auto px-6 pt-20 pb-16">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-10">
+            <div>
+                <div class="uppercase tracking-[2px] text-xs font-semibold text-emerald-600 mb-2">WHAT WE DO BEST</div>
+                <h2 class="section-header text-5xl tracking-tighter">Expert Remodeling.<br>Zero Compromise.</h2>
+            </div>
+            <a href="#configurator" class="mt-6 md:mt-0 inline-flex items-center text-emerald-700 font-semibold group">
+                Explore our Designer Shower System 
+                <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
+            </a>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- Bathroom Remodeling -->
+            <div class="service-card bg-white border border-slate-200 rounded-3xl p-8 group">
+                <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fas fa-shower text-3xl"></i>
+                </div>
+                <h3 class="font-semibold text-3xl tracking-tight mb-3">Bathroom Remodeling</h3>
+                <p class="text-slate-600 mb-6">Complete wet-area transformations with our signature All-Star Shower Systems. Grout-free, slip-resistant, and built for a lifetime.</p>
+                
+                <div class="space-y-2 text-sm">
+                    <div class="flex justify-between py-1 border-b"><span>Walk-In Showers</span><span class="font-medium text-emerald-600">→</span></div>
+                    <div class="flex justify-between py-1 border-b"><span>Tub-to-Shower Conversions</span><span class="font-medium text-emerald-600">→</span></div>
+                    <div class="flex justify-between py-1 border-b"><span>Aging Safely Walk-In Tubs</span><span class="font-medium text-emerald-600">→</span></div>
+                    <div class="flex justify-between py-1"><span>Full &amp; Partial Renovations</span><span class="font-medium text-emerald-600">→</span></div>
+                </div>
+                
+                <a href="#" class="mt-8 inline-block text-sm font-semibold text-emerald-700 group-hover:underline">Explore Bathroom Services →</a>
+            </div>
+
+            <!-- Kitchen -->
+            <div class="service-card bg-white border border-slate-200 rounded-3xl p-8 group">
+                <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fas fa-utensils text-3xl"></i>
+                </div>
+                <h3 class="font-semibold text-3xl tracking-tight mb-3">Kitchen Remodeling</h3>
+                <p class="text-slate-600 mb-6">Beautiful, functional kitchens with premium cabinetry, countertops, backsplashes, and smart layouts that improve daily life and home value.</p>
+                
+                <div class="space-y-2 text-sm">
+                    <div class="flex justify-between py-1 border-b"><span>Cabinet Installation &amp; Refacing</span></div>
+                    <div class="flex justify-between py-1 border-b"><span>Countertop Replacement</span></div>
+                    <div class="flex justify-between py-1 border-b"><span>Backsplash &amp; Fixture Upgrades</span></div>
+                    <div class="flex justify-between py-1"><span>Full Kitchen Transformations</span></div>
+                </div>
+                
+                <a href="#" class="mt-8 inline-block text-sm font-semibold text-emerald-700 group-hover:underline">Explore Kitchen Services →</a>
+            </div>
+
+            <!-- Handyman -->
+            <div class="service-card bg-white border border-slate-200 rounded-3xl p-8 group">
+                <div class="w-12 h-12 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fas fa-tools text-3xl"></i>
+                </div>
+                <h3 class="font-semibold text-3xl tracking-tight mb-3">Handyman Services</h3>
+                <p class="text-slate-600 mb-6">Reliable, same-week service for repairs, maintenance, and small-to-medium projects. Your trusted local handyman team.</p>
+                
+                <div class="grid grid-cols-2 gap-x-4 gap-y-1 text-sm mt-6">
+                    <div>• Repairs &amp; Fixes</div>
+                    <div>• Maintenance</div>
+                    <div>• Installations</div>
+                    <div>• Assembly &amp; Mounting</div>
+                    <div>• Drywall &amp; Painting</div>
+                    <div>• Plumbing &amp; Electrical</div>
+                </div>
+                
+                <a href="#" class="mt-8 inline-block text-sm font-semibold text-emerald-700 group-hover:underline">See Handyman Services →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FLAGSHIP: ALL-STAR SHOWER SYSTEM -->
+    <section id="shower-system" class="bg-slate-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-x-12 items-center">
+                <div class="md:col-span-7">
+                    <div class="uppercase tracking-[3px] text-emerald-400 text-xs font-semibold mb-3">OUR SIGNATURE OFFERING</div>
+                    <h2 class="section-header text-white text-6xl tracking-[-2.5px] leading-none mb-6">The All-Star<br>Shower System</h2>
+                    
+                    <p class="max-w-md text-lg text-white/70 mb-8">Engineered solid composite stone systems. Grout-free. 100% waterproof. Installed in as little as 2 days with lifetime material warranties.</p>
+                    
+                    <div class="flex flex-wrap gap-3 mb-10">
+                        <div class="bg-white/10 px-5 py-2 rounded-2xl text-sm flex items-center gap-x-2">
+                            <i class="fas fa-shield-alt"></i> <span>Lifetime Material Warranty</span>
+                        </div>
+                        <div class="bg-white/10 px-5 py-2 rounded-2xl text-sm flex items-center gap-x-2">
+                            <i class="fas fa-clock"></i> <span>1-2 Day Install</span>
+                        </div>
+                        <div class="bg-white/10 px-5 py-2 rounded-2xl text-sm flex items-center gap-x-2">
+                            <i class="fas fa-wheelchair"></i> <span>ADA &amp; Aging-in-Place Ready</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#configurator" class="inline-flex items-center bg-white text-slate-900 font-semibold px-8 py-4 rounded-3xl text-lg hover:bg-amber-50 transition">
+                        Design Your Perfect Shower <i class="fas fa-magic ml-3"></i>
+                    </a>
+                </div>
+                
+                <div class="md:col-span-5 mt-12 md:mt-0">
+                    <div class="bg-white/5 border border-white/10 rounded-3xl p-8">
+                        <div class="text-emerald-400 text-xs tracking-widest font-medium mb-4">3 TIERS FOR EVERY BUDGET</div>
+                        
+                        <div class="space-y-5">
+                            <div>
+                                <div class="flex justify-between items-baseline"><span class="font-semibold">Premier Series</span> <span class="text-xs text-white/50">Performance</span></div>
+                                <div class="text-sm text-white/70">Reliable RCB groutless panels • Fast &amp; durable</div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-baseline"><span class="font-semibold">Signature Series</span> <span class="text-xs text-white/50">Luxury</span></div>
+                                <div class="text-sm text-white/70">Elevated stone aesthetics • Coordinated finishes</div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-baseline"><span class="font-semibold">Designer Series</span> <span class="text-xs text-white/50">Premium Solid Surface</span></div>
+                                <div class="text-sm text-white/70">UpHome solid composite stone • Highest durability &amp; beauty</div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 pt-6 border-t border-white/10 text-xs text-white/50">
+                            All systems include matching low-profile slip-resistant bases, premium doors in 4 finishes, and coordinated accessories.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE DESIGNER SHOWER CONFIGURATOR -->
+    <section id="configurator" class="max-w-7xl mx-auto px-6 py-20">
+        <div class="text-center mb-12">
+            <div class="inline px-4 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold tracking-widest rounded-full">EXCLUSIVE TO ALL-STAR</div>
+            <h2 class="section-header text-5xl tracking-tighter mt-3 mb-3">Design Your All-Star Shower</h2>
+            <p class="max-w-md mx-auto text-slate-600">Use our interactive tool to explore configurations from the Designer Series. Get instant rendering prompts and pricing guidance.</p>
+        </div>
+
+        <div class="max-w-5xl mx-auto bg-white border border-slate-200 shadow-xl rounded-3xl p-8 md:p-10">
+            <div class="grid md:grid-cols-2 gap-x-10">
+                <!-- Controls -->
+                <div>
+                    <h4 class="font-semibold mb-4 flex items-center gap-x-2"><i class="fas fa-sliders-h text-emerald-600"></i> Configure Your System</h4>
+                    
+                    <div class="space-y-5">
+                        <!-- Size -->
+                        <div>
+                            <label class="block text-xs font-medium tracking-wider text-slate-500 mb-1.5">ALCOVE SIZE</label>
+                            <select id="size-select" class="w-full border border-slate-300 rounded-2xl px-4 py-3 text-sm focus:outline-none focus:border-emerald-500">
+                                <option value="32x60">32" × 60" (Standard Alcove)</option>
+                                <option value="36x60">36" × 60" (Larger Alcove)</option>
+                                <option value="34x48">34" × 48" (Compact)</option>
+                                <option value="36x72">36" × 72" (Spacious)</option>
+                                <option value="37x37">37" × 37" Neo / Round Corner</option>
+                            </select>
+                        </div>
+
+                        <!-- Series -->
+                        <div>
+                            <label class="block text-xs font-medium tracking-wider text-slate-500 mb-1.5">SERIES / TIER</label>
+                            <select id="series-select" class="w-full border border-slate-300 rounded-2xl px-4 py-3 text-sm focus:outline-none focus:border-emerald-500">
+                                <option value="Basic">Premier / Basic Series</option>
+                                <option value="Designer II">Signature / Designer II</option>
+                                <option value="Designer III">Designer III (Stone Sides)</option>
+                                <option value="Premium" selected>Designer Premium (Full Stone)</option>
+                                <option value="Signature">Signature Series (Coordinated Stone Base)</option>
+                            </select>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <!-- Base Color -->
+                            <div>
+                                <label class="block text-xs font-medium tracking-wider text-slate-500 mb-1.5">BASE COLOR (Slip-Resistant)</label>
+                                <select id="base-color" class="w-full border border-slate-300 rounded-2xl px-4 py-3 text-sm">
+                                    <option>White</option>
+                                    <option>Graphite</option>
+                                    <option>Desert Gray</option>
+                                    <option>Quartz Gray</option>
+                                    <option>Arctic (Stone)</option>
+                                    <option>Calacatta</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Back Wall -->
+                            <div>
+                                <label class="block text-xs font-medium tracking-wider text-slate-500 mb-1.5">BACK WALL COLOR</label>
+                                <select id="back-wall" class="w-full border border-slate-300 rounded-2xl px-4 py-3 text-sm">
+                                    <option>Calacatta (Strong Veining)</option>
+                                    <option>Nero Black</option>
+                                    <option>Arctic</option>
+                                    <option>Fusion Blue</option>
+                                    <option>Tuscany Beige</option>
+                                    <option>Waves Texture (Basic)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-medium tracking-wider text-slate-500 mb-1.5">FINISH</label>
+                                <select id="finish-select" class="w-full border border-slate-300 rounded-2xl px-4 py-3 text-sm">
+                                    <option value="Matte">Matte / Satin (Recommended)</option>
+                                    <option value="Gloss">Gloss (Premium Select)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium tracking-wider text-slate-500 mb-1.5">HEIGHT</label>
+                                <select id="height-select" class="w-full border border-slate-300 rounded-2xl px-4 py-3 text-sm">
+                                    <option value="standard">Standard 84"</option>
+                                    <option value="floor-to-ceiling">Floor-to-Ceiling (126") — Recommended</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button onclick="generateDesign()" 
+                            class="mt-8 w-full bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 transition text-white font-semibold py-4 rounded-3xl flex items-center justify-center gap-x-3 text-lg">
+                        <i class="fas fa-magic"></i> 
+                        <span>GENERATE MY DESIGN + RENDERING PROMPT</span>
+                    </button>
+                    
+                    <p class="text-center text-[10px] text-slate-400 mt-3">Instant photorealistic prompt ready for AI image generation</p>
+                </div>
+
+                <!-- Results Panel -->
+                <div id="config-results" class="hidden md:block bg-slate-900 text-white rounded-3xl p-8 mt-8 md:mt-0">
+                    <div class="text-emerald-400 text-xs tracking-[1.5px] mb-3">YOUR CUSTOM CONFIGURATION</div>
+                    
+                    <div id="results-summary" class="text-sm space-y-4 mb-6 min-h-[180px]">
+                        <!-- Populated by JS -->
+                    </div>
+                    
+                    <div class="border-t border-white/10 pt-5">
+                        <div class="text-xs text-white/50 mb-1.5">ESTIMATED INVESTMENT RANGE</div>
+                        <div id="price-range" class="text-3xl font-semibold tracking-tight text-white"></div>
+                        <div class="text-xs text-white/60 mt-1">Final pricing after free in-home consultation • Financing available</div>
+                    </div>
+                    
+                    <div class="mt-6 flex flex-col gap-3">
+                        <button onclick="copyPromptToClipboard()" 
+                                class="w-full py-3 border border-white/30 hover:bg-white/5 text-sm font-medium rounded-2xl flex items-center justify-center gap-x-2">
+                            <i class="fas fa-copy"></i> <span>Copy Rendering Prompt for AI Images</span>
+                        </button>
+                        
+                        <button onclick="bookFromConfig()" 
+                                class="w-full py-3 bg-white text-slate-900 font-semibold rounded-2xl text-sm flex items-center justify-center gap-x-2 hover:bg-amber-50">
+                            <i class="fas fa-calendar-check"></i> 
+                            <span>Book Consultation with This Design</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-6 text-xs text-slate-400 max-w-md mx-auto">
+            This tool uses real data from our Designer Series catalog. All customer-facing materials use All-Star Renovations branding only.
+        </div>
+    </section>
+
+    <!-- WHY US / PROCESS -->
+    <section id="why-us" class="bg-white border-t py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-x-16 items-center">
+                <div>
+                    <div class="text-emerald-600 text-xs font-bold tracking-[2px]">THE ALL-STAR DIFFERENCE</div>
+                    <h3 class="section-header text-5xl tracking-tight mt-3 mb-6 leading-none">Local experts.<br>Engineered systems.<br>Results that last.</h3>
+                    
+                    <div class="space-y-6 text-[15px]">
+                        <div class="flex gap-4">
+                            <div class="w-6 h-6 mt-1 flex-shrink-0 text-emerald-500"><i class="fas fa-check-circle fa-lg"></i></div>
+                            <div><strong class="font-semibold">True 2-day installs</strong> — Most jobs completed with minimal disruption to your home.</div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-6 h-6 mt-1 flex-shrink-0 text-emerald-500"><i class="fas fa-check-circle fa-lg"></i></div>
+                            <div><strong class="font-semibold">Lifetime material warranties</strong> backed by local accountability (not a call center).</div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-6 h-6 mt-1 flex-shrink-0 text-emerald-500"><i class="fas fa-check-circle fa-lg"></i></div>
+                            <div><strong class="font-semibold">Designed for real life</strong> — Slip-resistant bases, low-profile entries, grab bars, and aging-in-place options standard.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-10 md:mt-0">
+                    <div class="bg-slate-50 border rounded-3xl p-8 text-sm">
+                        <div class="font-semibold mb-4">Our Simple 4-Step Process</div>
+                        <ol class="space-y-5">
+                            <li class="flex gap-4"><span class="font-mono text-emerald-600 font-bold w-5">01</span> <span><strong>Free In-Home Consultation</strong> — We measure, listen to your goals, and assess your space.</span></li>
+                            <li class="flex gap-4"><span class="font-mono text-emerald-600 font-bold w-5">02</span> <span><strong>Custom Recommendation</strong> — We match the perfect All-Star tier and details to your needs and budget.</span></li>
+                            <li class="flex gap-4"><span class="font-mono text-emerald-600 font-bold w-5">03</span> <span><strong>Precise Professional Install</strong> — Our local Conway team delivers clean, fast, high-quality work.</span></li>
+                            <li class="flex gap-4"><span class="font-mono text-emerald-600 font-bold w-5">04</span> <span><strong>Final Review &amp; Handover</strong> — We walk through everything together until you're 100% satisfied.</span></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATIONS -->
+    <section id="locations" class="max-w-7xl mx-auto px-6 py-16">
+        <div class="text-center mb-10">
+            <div class="text-emerald-600 text-xs tracking-[2px] font-semibold">PROUDLY SERVING</div>
+            <h3 class="section-header text-4xl tracking-tight">Central Arkansas &amp; Beyond</h3>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3 text-center text-sm">
+            <div class="bg-white border py-4 rounded-2xl">Conway, AR</div>
+            <div class="bg-white border py-4 rounded-2xl">Greenbrier, AR</div>
+            <div class="bg-white border py-4 rounded-2xl">Vilonia, AR</div>
+            <div class="bg-white border py-4 rounded-2xl">Maumelle, AR</div>
+            <div class="bg-white border py-4 rounded-2xl">Cabot, AR</div>
+            <div class="bg-white border py-4 rounded-2xl">Sherwood, AR</div>
+            <div class="bg-white border py-4 rounded-2xl">Little Rock Metro</div>
+        </div>
+        
+        <p class="text-center text-xs text-slate-500 mt-6">50-mile service radius • Same professional standards everywhere we go.</p>
+    </section>
+
+    <!-- FINAL CTA -->
+    <div id="book-consultation" class="bg-emerald-700 py-16 text-white">
+        <div class="max-w-2xl mx-auto text-center px-6">
+            <h3 class="section-header text-5xl tracking-tighter">Ready to create your perfect bathroom?</h3>
+            <p class="mt-4 text-emerald-100 max-w-sm mx-auto">Schedule your free in-home consultation today. We'll measure your space, show you real options, and give you a transparent quote.</p>
+            
+            <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:5015043398" class="inline-flex justify-center items-center px-10 py-4 bg-white text-emerald-700 font-semibold rounded-3xl hover:bg-amber-50 text-lg">
+                    Call (501) 504-3398
+                </a>
+                <a href="#" onclick="document.getElementById('configurator').scrollIntoView({behavior:'smooth'})" 
+                   class="inline-flex justify-center items-center px-8 py-4 border border-white/60 hover:bg-white/10 font-medium rounded-3xl text-lg">
+                    Try the Design Tool First
+                </a>
+            </div>
+            
+            <div class="mt-5 text-xs text-emerald-200">We typically respond within 1 business hour • Evenings &amp; weekends available</div>
+        </div>
+    </div>
+
+    <footer class="bg-slate-900 text-white/70 py-12 text-sm">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-y-10">
+            <div class="md:col-span-5">
+                <div class="flex items-center gap-x-3 mb-4">
+                    <div class="w-9 h-9 bg-white rounded-2xl flex items-center justify-center"><span class="font-bold text-slate-900 text-3xl tracking-tighter">A</span></div>
+                    <div class="font-semibold text-xl text-white">All-Star Renovations</div>
+                </div>
+                <div class="max-w-xs">Creating perfection in Central Arkansas bathrooms since 2014. Local team. Lifetime warranties. 2-day installs.</div>
+            </div>
+            
+            <div class="md:col-span-3">
+                <div class="font-medium text-white mb-3">Quick Links</div>
+                <div class="space-y-1.5 text-sm">
+                    <div><a href="#" class="hover:text-white">All-Star Shower System</a></div>
+                    <div><a href="#" class="hover:text-white">Walk-In Tubs</a></div>
+                    <div><a href="#" class="hover:text-white">Financing Options</a></div>
+                    <div><a href="#" class="hover:text-white">Our Process</a></div>
+                </div>
+            </div>
+            
+            <div class="md:col-span-4">
+                <div class="font-medium text-white mb-3">Contact</div>
+                <div class="space-y-1">
+                    <div><a href="tel:5015043398" class="hover:text-white">(501) 504-3398</a></div>
+                    <div><a href="mailto:info@allstarreno.com" class="hover:text-white">info@allstarreno.com</a></div>
+                    <div class="pt-1">11 Arnett Ln, Conway, AR 72032</div>
+                    <div class="pt-2 text-xs">allstarreno.com • allstarreno.link</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 pt-10 mt-10 border-t border-white/10 text-xs flex flex-col md:flex-row justify-between gap-y-2">
+            <div>© 2026 All-Star Renovations. All rights reserved. Creating Perfection in Conway &amp; Central Arkansas.</div>
+            <div class="flex gap-x-4">
+                <a href="#" class="hover:text-white">Privacy</a>
+                <a href="#" class="hover:text-white">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind script
+        function initializeTailwind() {
+            document.documentElement.style.setProperty('--accent', '#c2410f');
+        }
+        
+        // Navbar scroll effect
+        function initNavbar() {
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('nav-scrolled');
+                } else {
+                    navbar.classList.remove('nav-scrolled');
+                }
+            });
+        }
+        
+        // Interactive Configurator Logic
+        function generateDesign() {
+            const size = document.getElementById('size-select').value;
+            const series = document.getElementById('series-select').value;
+            const baseColor = document.getElementById('base-color').value;
+            const backWall = document.getElementById('back-wall').value;
+            const finish = document.getElementById('finish-select').value;
+            const height = document.getElementById('height-select').value;
+            
+            const resultsPanel = document.getElementById('config-results');
+            const summaryEl = document.getElementById('results-summary');
+            const priceEl = document.getElementById('price-range');
+            
+            resultsPanel.classList.remove('hidden');
+            resultsPanel.classList.add('block');
+            
+            // Generate summary
+            let seriesLabel = series;
+            let priceRange = "$3,200 – $4,100";
+            
+            if (series === "Premium") {
+                priceRange = "$3,429 – $3,869";
+                seriesLabel = "Designer Premium (Full Stone Veining)";
+            } else if (series === "Signature") {
+                priceRange = "$3,669 – $4,200+";
+                seriesLabel = "Signature Series (Coordinated Stone Base)";
+            } else if (series === "Designer III") {
+                priceRange = "$3,429 – $3,709";
+            }
+            
+            if (height === "floor-to-ceiling") {
+                priceRange = priceRange.replace("$", "$3,800 – $");
+            }
+            
+            summaryEl.innerHTML = `
+                <div class="flex justify-between text-sm"><span class="text-white/60">Size</span> <span class="font-medium">${size}" alcove</span></div>
+                <div class="flex justify-between text-sm"><span class="text-white/60">Series</span> <span class="font-medium">${seriesLabel}</span></div>
+                <div class="flex justify-between text-sm"><span class="text-white/60">Base</span> <span class="font-medium">${baseColor} (Slip-Resistant)</span></div>
+                <div class="flex justify-between text-sm"><span class="text-white/60">Back Wall</span> <span class="font-medium">${backWall}</span></div>
+                <div class="flex justify-between text-sm"><span class="text-white/60">Finish & Height</span> <span class="font-medium">${finish} • ${height === 'floor-to-ceiling' ? 'Floor-to-Ceiling (126")' : 'Standard 84"'}</span></div>
+                <div class="pt-3 text-[10px] text-emerald-300">✓ Compatible with standard 2" drains • Trimmable for niches • Includes drain plate</div>
+            `;
+            
+            priceEl.innerHTML = priceRange;
+            
+            // Store current config for later use
+            window.currentConfig = { size, series, baseColor, backWall, finish, height, priceRange };
+        }
+        
+        function copyPromptToClipboard() {
+            if (!window.currentConfig) {
+                alert("Please generate a design first.");
+                return;
+            }
+            
+            const cfg = window.currentConfig;
+            const prompt = `Photorealistic rendering of a modern luxury bathroom shower alcove exactly ${cfg.size} with ${cfg.baseColor} slip-resistant solid composite stone shower pan base, surrounded by seamless ${cfg.backWall} stone veining walls in ${cfg.finish} finish, ${cfg.height === 'floor-to-ceiling' ? 'floor-to-ceiling 126" tall with continuous flowing pattern' : 'standard 84" height'}, under soft LED cove lighting and rainfall shower head in brushed nickel, clean modern bathroom, high-end architectural photography, cinematic lighting, subtle steam and water droplets, All-Star Renovations Designer Series, ultra realistic, 8k detail.`;
+            
+            navigator.clipboard.writeText(prompt).then(() => {
+                const btns = event.currentTarget;
+                const originalText = event.target.innerHTML;
+                event.target.innerHTML = `<i class="fas fa-check"></i> Copied to clipboard!`;
+                setTimeout(() => {
+                    if (event.target) event.target.innerHTML = originalText;
+                }, 2200);
+            }).catch(() => {
+                // Fallback
+                prompt(prompt);
+            });
+        }
+        
+        function bookFromConfig() {
+            if (!window.currentConfig) {
+                alert("Generate your design first, then we can book a consultation around it.");
+                return;
+            }
+            
+            const cfg = window.currentConfig;
+            const message = `Hi! I used the All-Star Designer Shower Tool and loved the ${cfg.size} ${cfg.series} in ${cfg.baseColor} base + ${cfg.backWall} walls (${cfg.finish}, ${cfg.height}). I'd like to book a free in-home consultation to discuss this design.`;
+            
+            // In real site this would open a form or Calendly with prefilled data
+            window.location.href = `tel:5015043398`;
+            
+            // Bonus: Could trigger Rena agent here in future
+            setTimeout(() => {
+                alert("Thank you! Our team will call you shortly to confirm your consultation and discuss this exact configuration.");
+            }, 1200);
+        }
+        
+        // Mobile menu
+        function initMobileMenu() {
+            const btn = document.getElementById('mobile-menu-btn');
+            if (!btn) return;
+            
+            btn.addEventListener('click', () => {
+                const menu = document.createElement('div');
+                menu.className = `fixed inset-0 bg-black/70 z-[100] md:hidden`;
+                menu.innerHTML = `
+                    <div class="bg-white w-4/5 h-full p-8">
+                        <div class="flex justify-between mb-8">
+                            <div class="font-bold text-2xl">All-Star Renovations</div>
+                            <button class="text-3xl text-slate-400">&times;</button>
+                        </div>
+                        <div class="flex flex-col gap-y-5 text-lg font-medium">
+                            <a href="#services" class="py-1">Services</a>
+                            <a href="#shower-system" class="py-1">All-Star Shower System</a>
+                            <a href="#configurator" class="py-1">Design Your Shower</a>
+                            <a href="#why-us" class="py-1">Why Choose Us</a>
+                            <a href="#locations" class="py-1">Service Areas</a>
+                            
+                            <div class="pt-6 border-t">
+                                <a href="tel:5015043398" class="flex items-center gap-x-3 text-emerald-700 font-semibold">
+                                    <i class="fas fa-phone"></i> (501) 504-3398
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                document.body.appendChild(menu);
+                
+                menu.querySelector('button').onclick = () => menu.remove();
+                menu.onclick = (e) => { if (e.target === menu) menu.remove(); };
+            });
+        }
+        
+        // Initialize everything
+        function initializeWebsite() {
+            initializeTailwind();
+            initNavbar();
+            initMobileMenu();
+            
+            // Optional: Pre-select a nice default in configurator
+            setTimeout(() => {
+                const sizeSelect = document.getElementById('size-select');
+                if (sizeSelect) sizeSelect.value = "36x60";
+            }, 800);
+            
+            // Keyboard support for configurator
+            document.addEventListener('keydown', function(e) {
+                if (e.key === "/" && document.activeElement.tagName === "BODY") {
+                    e.preventDefault();
+                    document.getElementById('configurator').scrollIntoView({ behavior: 'smooth' });
+                    setTimeout(() => {
+                        document.getElementById('size-select')?.focus();
+                    }, 600);
+                }
+            });
+            
+            console.log('%c[All-Star Website] Production-ready homepage + Designer Configurator initialized.', 'color:#64748b');
+        }
+        
+        window.onload = initializeWebsite;
+    </script>
+</body>
+</html>
